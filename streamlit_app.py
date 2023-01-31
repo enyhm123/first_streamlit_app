@@ -43,7 +43,7 @@ my_cur = my_cnx.cursor()
 my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.header("The fruit load list contains:")
-streamlit.data_frame(my_data_row)
+streamlit.dataframe(my_data_row)
 
 
 
